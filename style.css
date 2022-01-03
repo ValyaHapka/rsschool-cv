@@ -1,1 +1,141 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.header {
+    background-color: rgb(138, 43, 226);
+}
+.main {
+    margin-bottom: auto;
+}
+.footer {
+    padding: 20px;
+    background-color: rgb(138, 43, 226);
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 50px;
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
+}
+.nav-item {
+    list-style-type: none;
+}
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #fff;
+    transition: 3s;
+}
+.section {
+    width: 50%;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media (max-width: 768px){
+    .section {
+        width: 100%;
+    } 
+}
+.section-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #5541c9;
+}
+.section-profile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 35px 30px;
+    border-bottom: 15px solid rgb(138, 43, 226);
+}
+.section-profile-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 3s;
+}
+.main-title {
+    position: relative;
+    font-size: 32px;
+    color: #000;
+}
+.section-subtitle {
+    margin-top: 20px;
+    color: #000;
+    font-weight: 300;
+}
+.section-list {
+    margin: 0;
+    padding: 0;
+}
+.section-item {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.section-link {
+    text-decoration: none;
+    color: rgb(138, 43, 226);
+    transition: color 0.5s;
+}
+.section-link:hover {
+    color: #000;
+}
+.pre {
+    margin: 0;
+    padding: 0;
+}
+span {
+    color: rgb(138, 43, 226);
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    color: #fff;
+}
+.github-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.5s;
+}
+.github-link:hover {
+    color: #000;
+}
+.rss {
+    width: 121px;
+    height: 45px;
+    background-image: url(https://rs.school/images/rs_school_js.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
