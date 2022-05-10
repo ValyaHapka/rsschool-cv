@@ -102,6 +102,15 @@ body {
     margin: 0;
     margin-bottom: 10px;
 }
+.section-item a {
+    color: rgb(138, 43, 226);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.section-item a:hover {
+    color: #000;
+}
 .section-link {
     text-decoration: none;
     color: rgb(138, 43, 226);
@@ -128,6 +137,7 @@ span {
     text-decoration: none;
     color: #fff;
     transition: color 0.5s;
+    cursor: pointer;
 }
 .github-link:hover {
     color: #000;
