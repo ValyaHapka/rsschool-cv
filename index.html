@@ -31,7 +31,7 @@
     <main class="main">
         <div class="container main-container">
             <section class="section section-profile" id="profile">
-                <img src="./assets/img/image.jpg" alt class="section-profile-logo">
+                <img src="./assets/img/myImage.jpg" alt class="section-profile-logo">
               <div class="section-profile-title">
                   <h1 class="section-title main-title">George Mironovich </h1>
                   <h3 class="section-subtitle">Front-end developer</h3>
@@ -68,11 +68,15 @@
                 <ul class="section-list">
                     <li class="section-item">
                         Web-development:
-                        <span>HTML5, CSS3</span>
+                        <span>HTML5, CSS3, JS</span>
                     </li>
                     <li class="section-item">
                         Version control:
                         <span>GIT, Github</span>
+                    </li>
+                    <li class="section-item">
+                        Graphics:
+                        <span>Figma</span>
                     </li>
                 </ul>
             </section>
@@ -80,9 +84,19 @@
                 <h2 class="section-title">Code</h2>
                 <pre class="pre">
                     <code> 
-function multiply(a, b) {
-return a * b
-} 
+function dateSample(sampleActivity) {
+  let sampleActivityNumber = Number(sampleActivity);
+  if(typeof sampleActivity !== 'string') {
+    return false;
+  }
+  if(isNaN(sampleActivityNumber)) {
+    return false;
+  } else if(sampleActivityNumber <= 0 || sampleActivityNumber > 15) {
+    return false;
+  } 
+    let result = Math.ceil((HALF_LIFE_PERIOD / Math.log(2)) * Math.log(sampleActivityNumber / MODERN_ACTIVITY) * (-1));
+    return result
+  }
                     </code>
                 </pre>
             </section>
@@ -92,7 +106,14 @@ return a * b
             </section>
             <section class="section" id="projects">
                 <h2 class="section-title">Projects</h2>
-                <p>Soon...</p>
+                <ul class="section-list">
+                    <li class="section-item">
+                        <a href="https://rolling-scopes-school.github.io/valyahapka-JSFEPRESCHOOL/Portfolio/index.html">Photographer's portfolio</a>
+                    </li>
+                    <li class="section-item">
+                        <a href="https://rolling-scopes-school.github.io/valyahapka-JSFEPRESCHOOL/JS30.Random-game/index.html">Snake game</a>
+                    </li>
+                </ul>
             </section>
             <section class="section" id="education">
                 <h2 class="section-title">Education</h2>
@@ -110,7 +131,6 @@ return a * b
                 &copy; 2022
                 <a class="github-link" href="https://github.com/valyahapka">ValyaHapka</a>
             </div>
-                <a class="rss" href="https://rs.school/js"></a>
         </div>
     </footer>
 </body>
